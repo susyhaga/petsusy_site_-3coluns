@@ -78,8 +78,14 @@ header img{
 .menu li:hover .submenu{
     display: block;
 }
+.menu li:hover{
+    border-color: #a022e9;
+}
+
 nav{
-    padding-top: 18px
+    display: inline;
+    padding-top: 18px;
+    
 }
 nav li{
     list-style: none;
@@ -162,6 +168,10 @@ nav li a{
 0 0 0 20px rgba(65, 40, 122, 0.5),
 0 0 0 25px rgba(78, 59, 131, 0.3),
 0 0 0 30px rgba(52, 5, 73, 0.1);
+}
+
+#botao-sobre{
+    display: none;
 }
 
 section{
@@ -268,29 +278,49 @@ footer li img{
 
 
 @media screen and (max-width: 767px){
-    .carrossel{
-        max-width: 1024px;
-        overflow: hidden;
-        overflow-y:hidden;
-    }
     .container{
         max-width: 90%;
     }
-    header .div .container{
-        flex-direction: column;
+
+    header .container{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
     }
-    header h1{
-        margin-top: 0px;
-        margin-right:4px;
-        font-size: 32px;
+    .estilo{
+        display: block;
+        text-align: center;
+    }
+    .estilo p{
         padding-top: 12px;
-        justify-content: space-between;
+    }
+    .botao-menu button{
+        display: flex;
+        padding-left: 8px;
+        border-radius: 0px;
+        width: 100px;
+    }
+    
+    #sobre-loja{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #sobre-loja .container-flex{
+        display: inline-block;
+    }
+    #sobre-loja img{
+        max-width: 100%;
+    }
+    #sobre-loja p{
+        font-size: small;
         
     }
     .submenu{
         display:block;
         position: relative; 
-        widows: 100px;
+        width:100px;
     }
     .submenu li{
         display: block;
@@ -308,34 +338,29 @@ footer li img{
         display: none;
     }
     .botao-menu{
-        display: flex;
+        display:flex;
+        padding-top: 12px;
+        justify-content: center;
         margin-top: 16px;
         padding-bottom: 16px;
-        margin-left: 42px;
-        padding-left:52px;
     }
     .botao-menu button{
-        padding:12px;
-        border-radius: 0px;
-    }
-
-    #sobre-loja{
-        background-color: #ffff;
-        display: block;
-        
+    padding:8px;
     }
     
+    #sobre-loja{
+        vertical-align:text-bottom;
+        
+    }
+
     #sobre-loja h2{
         color: rgb(58, 9, 104);
         border-bottom:6px solid rgb(66, 5, 66);
-        display:flex;
+        display:block;
         font-size:1.5em;
+        
     }
     
-    #sobre-loja p{
-        display: block;
-        font-size: 12px;
-    }
     #sobre-loja img{
         max-width: 500px;
         height: 500px;
@@ -346,6 +371,34 @@ footer li img{
     0 0 0 25px rgba(78, 59, 131, 0.3),
     0 0 0 30px rgba(52, 5, 73, 0.1);
     }
-    
-
+    .lista-roupas li img{
+        max-width: 100%;
+        width: 500px;
+        height: 500px;
+    }
 }
+
+
+
+
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+        .container{
+            max-width: 90%;
+        }
+        .botao-menu{
+            display: none;
+        }
+        .destaque .noticia a{
+            font-size: 1.5em;
+        }
+        .noticias{
+            grid-template-columns: repeat(2,49%);
+        }
+    }
+    @media screen and (min-width:1024px){
+        .botao-menu{
+            display: none;
+        }
+    }
+
