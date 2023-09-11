@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto,'sans-serif';
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    background-image: url('./images/back.png');
+    background-attachment: fixed;
+}
+
+header{
+    padding:14px 0 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+.container{
+    display: inline;
+    max-width: 1024px;
+    width: 100%;
+    margin:0 auto;
+}
+header .container{
+    display: flex; /* poe um elemento do lado do outro */
+    justify-content: space-between;/* joga o h1 prum lado e o campo de pesquisa pro outro*/
+    align-items: center; /* CENTRALIZA NA VERTICAL*/
+}
+.estilo{
+    display: flex;
+}
+.estilo p{
+    padding-top: 38px;
+    padding-right: 12px;
+}
+.estilo h1{
+    padding-top: 24px;
+    padding-right: 12px;
+}
+.container-flex{
+    display:flex;
+}
+header, footer{
+    background-color: #401956;
+    padding-top: 12px;
+    color: #ffff;
+}
+
+footer > .container{
+    align-items: center;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    
+}
+
+header img{
+    margin-bottom: 8px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin-right: 6px;
+}
+
+.menu > li{ /*afeta apenas o li do MENU */
+    float: left;
+    list-style: none;
+    padding-right: 32px;
+    border-top: 4px solid transparent; /* aparece no MENU LI:HOVER */
+    position: relative; /*contem o elemento filho que tenha position absolut*/
+}
+.clear{ /*para corrigir o FLOAT LEFT DA UL MENU*/
+    clear: both;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+nav{
+    padding-top: 18px
+}
+nav li{
+    list-style: none;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav li a{
+    color:#ffff;
+    text-decoration: none;
+}
+
+.submenu{
+    display:none;
+    border: 2px solid rgb(75, 24, 104);
+    background-color: #ffff;
+    position: absolute; /*nao descola o elemento do menu ao abrir o submenu */
+    left: 0;
+    width: 160px;
+    top: 100%; /*acaba o elemento, comeca no submenu */
+}
+
+.submenu li a{
+    color: black;
+
+}
+.submenu li{
+    display: block;
+    padding: 8px;
+
+}
+.carrossel{
+    max-width: 1024px;
+    overflow: hidden;
+    overflow-y:hidden;
+}
+
+.frase{
+    padding: 0 0;
+    padding-right: 68px;
+    background-color: #401956;
+    color:#ffff;
+    font-style: italic;
+    
+}
+.frase p{
+    text-align: right;
+    padding: 6px;
+
+}
+#sobre-loja{
+    background-color: #ffff;
+    display: flex;
+    margin:62px;
+    padding-left: 12px;
+    
+}
+
+#sobre-loja h2{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 36px;
+    color: rgb(58, 9, 104);
+    border-bottom:6px solid rgb(66, 5, 66);
+    padding-left: 40px
+}
+#sobre-loja p{
+    padding-top: 16px;
+    padding-left: 16px
+}
+#sobre-loja img{
+    max-width: 500px;
+    height: 500px;
+    margin-right: 82px;
+    margin: 58px;
+    box-shadow:
+
+0 0 0 12px rgba(53, 14, 85, 0.7),
+0 0 0 20px rgba(65, 40, 122, 0.5),
+0 0 0 25px rgba(78, 59, 131, 0.3),
+0 0 0 30px rgba(52, 5, 73, 0.1);
+}
+
+section{
+    padding: 32px;
+}
+
+#produtos li{
+    background-color: #ffff;
+    padding-top: 18px;
+    justify-content: space-between;
+
+}
+#produtos h2{
+    padding-top: 24px;
+    font-size: 36px;
+    color: rgb(58, 9, 104);
+    padding-bottom: 24px;
+    background-color: #ffff;
+    border-bottom: 6px solid rgb(66, 5, 66);
+}
+
+#promocao li{
+    background-color: #ffff;
+    padding-top: 18px;
+}
+#promocao h2{
+    font-size: 36px;
+    color: rgb(58, 9, 104);
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background-color: #ffff;
+    border-bottom: 6px solid rgb(66, 5, 66);
+}
+
+.lista-roupas{
+    flex-wrap: wrap;
+}
+.lista-roupas li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 18px;
+}
+.lista-roupas li h3{
+    margin:16px 0;
+}
+.lista-roupas li img{
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+button{
+    display: block;
+    width:100%;
+    padding:12px 0;
+    border:none;
+    background-color: #4b1197;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: italic;
+    cursor:pointer;
+    border-radius: 6px;
+}
+.botao-menu{
+    display: none;
+}
+.price{
+    margin:16px;
+    display: block;
+}
+.price del{
+    color: rgba(50, 8, 83, 0.8);
+    font-size: 14px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+.clear-fix{
+    clear: both;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img #radio{
+    border-radius: 33px;
+}
+footer li img{
+    height: 32px;
+    border-radius: 14px;
+}
+
+
+@media screen and (max-width: 767px){
+    .carrossel{
+        max-width: 1024px;
+        overflow: hidden;
+        overflow-y:hidden;
+    }
+    .container{
+        max-width: 90%;
+    }
+    header .div .container{
+        flex-direction: column;
+    }
+    header h1{
+        margin-top: 0px;
+        margin-right:4px;
+        font-size: 32px;
+        padding-top: 12px;
+        justify-content: space-between;
+        
+    }
+    .submenu{
+        display:block;
+        position: relative; 
+        widows: 100px;
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .menu > li{ /*afeta apenas o li do MENU */
+        clear: both;
+    }
+
+    .menu li{
+        display: block;
+        padding:8px;
+    }
+    .menu{
+        display: none;
+    }
+    .botao-menu{
+        display: flex;
+        margin-top: 16px;
+        padding-bottom: 16px;
+        margin-left: 42px;
+        padding-left:52px;
+    }
+    .botao-menu button{
+        padding:12px;
+        border-radius: 0px;
+    }
+
+    #sobre-loja{
+        background-color: #ffff;
+        display: block;
+        
+    }
+    
+    #sobre-loja h2{
+        color: rgb(58, 9, 104);
+        border-bottom:6px solid rgb(66, 5, 66);
+        display:flex;
+        font-size:1.5em;
+    }
+    
+    #sobre-loja p{
+        display: block;
+        font-size: 12px;
+    }
+    #sobre-loja img{
+        max-width: 500px;
+        height: 500px;
+        box-shadow:
+    
+    0 0 0 12px rgba(53, 14, 85, 0.7),
+    0 0 0 20px rgba(65, 40, 122, 0.5),
+    0 0 0 25px rgba(78, 59, 131, 0.3),
+    0 0 0 30px rgba(52, 5, 73, 0.1);
+    }
+    
+
+}
