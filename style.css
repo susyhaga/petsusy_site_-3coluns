@@ -65,11 +65,11 @@ header img{
     margin-right: 6px;
 }
 
-.menu > li{ /*afeta apenas o li do MENU */
+.menu > li{ 
     float: left;
     list-style: none;
     padding-right: 32px;
-    border-top: 4px solid transparent; /* aparece no MENU LI:HOVER */
+    border-top: 4px solid transparent; 
     position: relative; /*contem o elemento filho que tenha position absolut*/
 }
 .clear{ /*para corrigir o FLOAT LEFT DA UL MENU*/
@@ -106,7 +106,7 @@ nav li a{
     position: absolute; /*nao descola o elemento do menu ao abrir o submenu */
     left: 0;
     width: 160px;
-    top: 100%; /*acaba o elemento, comeca no submenu */
+    top: 100%; 
 }
 
 .submenu li a{
@@ -163,7 +163,6 @@ nav li a{
     margin-right: 82px;
     margin: 58px;
     box-shadow:
-
 0 0 0 12px rgba(53, 14, 85, 0.7),
 0 0 0 20px rgba(65, 40, 122, 0.5),
 0 0 0 25px rgba(78, 59, 131, 0.3),
@@ -182,7 +181,6 @@ section{
     background-color: #ffff;
     padding-top: 18px;
     justify-content: space-between;
-
 }
 #produtos h2{
     padding-top: 24px;
