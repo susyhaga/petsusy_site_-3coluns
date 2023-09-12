@@ -374,11 +374,7 @@ footer li img{
             display: block;
             margin: 0 auto;
         }
-        .submenu{
-            display:none;
-            position: relative; 
-            width:100px;
-        }
+     
         #sobre-loja{
             text-align: center;
             display: block;
@@ -436,11 +432,7 @@ footer li img{
             width: 500px;
             height: 400px;
         }
-        .submenu{
-            display:none;
-            position: relative; 
-            width:100px;
-        }
+    
         .item-central{
             margin: 0 5%;
         }
